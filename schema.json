@@ -1,0 +1,46 @@
+{
+    "title": "Company",
+    "description": "Identifying information about the company.",
+    "type": "object",
+    "properties": {
+        "name": {
+	    "title": "Name", 
+	    "description": "The company's name", 
+	    "type": "string"
+	},
+        "CEO": {
+	    "title": "CEO", 
+	    "description": "The CEO of the company", 
+	    "type": "string"
+	},
+        "location": {
+            "title": "Location",
+            "description": "The company's location or address",
+            "type": "string"
+        },
+        "website": {
+            "title": "Website",
+            "description": "The URL of the company website",
+            "type": "string"
+        },
+        "services": {
+            "title": "Services",
+            "description": "The list of financial services offered by this firm to its clients or customers e.g. investment",
+            "type": "array",
+	    "items": {
+		"type": "string"
+	    }
+        },
+        "market": {
+            "title": "Market",
+            "description": "The market that the company is trying to address by providing products or services for",
+            "type": "string"
+        },
+        "financials": {
+            "title": "Financials",
+            "description": "Details about the financials for the company as it relates to opportunity, roadmap or plan",
+            "type": "string"
+        }
+    },
+    "required": ["name"]
+}
